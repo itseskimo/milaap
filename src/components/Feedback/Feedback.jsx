@@ -1,12 +1,15 @@
 
-const Feedback = ({ feedback, score, onRestart, scoreVisibility }) => {
-
+const Feedback = ({ feedback, score, onRestart, scoreVisibility,messageVisibility }) => {
+console.log(messageVisibility)
   return (
     <div>
       {/* Display the feedback message and the score */}
       {feedback && (
         <>
-          <p>{feedback}</p>
+          {messageVisibility ? <p>Previous answer was
+            <span style={{ color: feedback === 'Incorrect!' ? 'red' : 'green' }}> {feedback}</span> </p>
+            :
+            <p>{feedback}</p>}
 
           {scoreVisibility && <h3>Your Score: {score}</h3>}
 

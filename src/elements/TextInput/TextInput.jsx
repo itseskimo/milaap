@@ -8,6 +8,7 @@ const TextInput = React.memo(({ question, userAnswer, onAnswerChange }) => (
     <input
       type="text"
       value={userAnswer}
+      autoFocus
       onChange={(e) => onAnswerChange(e.target.value)}
     />
   </div>
