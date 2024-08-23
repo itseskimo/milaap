@@ -1,8 +1,11 @@
 .feedback-container {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .result {
     position: absolute;
-    bottom: 0;
+    bottom: -5px;
 }
