@@ -1,7 +1,15 @@
-.start-screen{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 1rem;
+.start-screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+
+
+@media(max-width:600px) {
+  .start-screen h1 {
+    font-size: x-large;
   }
+}

@@ -6,6 +6,7 @@
     padding: 20px 40px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 20px;
     width: 400px;
 }
@@ -27,13 +28,13 @@
     outline: none;
 }
 
-.countdown-container{
+.countdown-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.timer{
+.timer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,4 +45,12 @@
     width: 25px;
     height: 25px;
     font-size: 12px;
+}
+
+
+@media(max-width:600px) {
+    .quiz-container {
+        padding: 20px 20px;
+        width: 350px;
+    }
 }
