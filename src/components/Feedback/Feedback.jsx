@@ -1,12 +1,13 @@
+import './Feedback.css'
 
 const Feedback = ({ feedback, score, onRestart, scoreVisibility,messageVisibility }) => {
-console.log(messageVisibility)
+
   return (
-    <div>
+    <div className='feedback-container'>
       {/* Display the feedback message and the score */}
       {feedback && (
         <>
-          {messageVisibility ? <p>Previous answer was
+          {messageVisibility ? <p className='result'>Previous answer was
             <span style={{ color: feedback === 'Incorrect!' ? 'red' : 'green' }}> {feedback}</span> </p>
             :
             <p>{feedback}</p>}
