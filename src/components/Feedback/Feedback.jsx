@@ -1,6 +1,6 @@
 import './Feedback.css'
 
-const Feedback = ({ feedback, score, onRestart, scoreVisibility,messageVisibility }) => {
+const Feedback = ({ feedback, score, onRestart, scoreVisibility, messageVisibility }) => {
 
   return (
     <div className='feedback-container'>
